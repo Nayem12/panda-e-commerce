@@ -49,14 +49,11 @@
                                         front of funky world.
                                     </p>
                                     <h1>$420</h1>
-                                </div>
-                                <div class="pt-2 card-footer d-flex border-0 pb-2 bg-light text-light text-start">
-
                                     <!-- Button trigger modal -->
-                                    <a class="text-decoration-none py-3 px-5 d-inline-block bg-light text-primary fw-bold rounded btn text-light px-4 py-2 border-0"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Buy now <i
-                                            class="fas fa-angle-double-right"></i>
-                                    </a>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal" style="margin-left: 20%;">
+                                        Buy now
+                                    </button>
 
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1"
@@ -64,75 +61,116 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                    <h5 class="modal-title" id="exampleModalLabel">Shipping Address
+                                                        Guest</h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
-                                                <form class="container row g-3 p-3">
-                                                    <div class="col-md-6">
-                                                        <label for="inputEmail4"
-                                                            class="form-label text-dark">Email</label>
-                                                        <input type="email" class="form-control" id="inputEmail4">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="inputPassword4"
-                                                            class="form-label text-dark">Password</label>
-                                                        <input type="password" class="form-control" id="inputPassword4">
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <label for="inputName" class="form-label text-dark">Full
-                                                            Name</label>
-                                                        <input type="text" class="form-control" id="inputAddress"
-                                                            placeholder="Enter Your Name">
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <label for="inputAddress"
-                                                            class="form-label text-dark">Address</label>
-                                                        <input type="text" class="form-control" id="inputAddress2"
-                                                            placeholder="Enter Your Address">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="inputCity" class="form-label text-dark">City</label>
-                                                        <input type="text" class="form-control" id="inputCity">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label for="inputState"
-                                                            class="form-label text-dark">Size</label>
-                                                        <select id="inputState" class="form-select">
-                                                            <option selected>Choose...</option>
-                                                            <option>38</option>
-                                                            <option>39</option>
-                                                            <option>40</option>
-                                                            <option>41</option>
-                                                            <option>42</option>
-                                                            <option>43</option>
-                                                            <option>44</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <label for="inputZip" class="form-label text-dark">Zip</label>
-                                                        <input type="text" class="form-control" id="inputZip">
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="gridCheck">
-                                                            <label class="form-check-label text-dark" for="gridCheck">
-                                                                I have read and agreed to the<a
-                                                                    class="text-decoration-none" href=""> terms and
-                                                                    conditions</a>
-                                                            </label>
+                                                <div class="modal-body">
+
+                                                    <form class="container row g-3 p-3">
+
+                                                        <div class="col-12">
+
+                                                            <input type="text" class="form-control" id="inputAddress"
+                                                                placeholder="Enter Your Name" required>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <button type="submit" class="btn btn-primary">Confirm
-                                                        </button>
-                                                    </div>
-                                                </form>
+                                                        <div class="col-md-6">
+
+                                                            <input type="text" class="form-control" id="inputNumber"
+                                                                placeholder="Enter Your Number" required>
+                                                        </div>
+                                                        <div class="col-12">
+
+                                                            <input type="text" class="form-control" id="inputAddress2"
+                                                                placeholder="Enter Your Address">
+                                                        </div>
+                                                        <div class="col-12">
+
+                                                            <select id="inputState" class="form-select" required>
+                                                                <option selected>Choose your city</option>
+                                                                <option>Dhaka</option>
+                                                                <option>Khulna</option>
+                                                                <option>Chittagong</option>
+                                                                <option>Rajshahi</option>
+                                                                <option>Rangpur</option>
+                                                                <option>Sylhet</option>
+                                                                <option>Barisal</option>
+
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <label for="chooseColour" class="form-label">Colour</label>
+                                                            <select id="inputState" class="form-select required">
+                                                                <option selected>Choose...</option>
+
+                                                                <option>Red</option>
+                                                                <option>Yellow</option>
+                                                                <option>White</option>
+                                                                <option>Black</option>
+                                                                <option>Purple</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <label for="inputSize" class="form-label">Size</label>
+                                                            <select id="inputState" class="form-select">
+                                                                <option selected>Choose...</option>
+
+                                                                <option>39</option>
+                                                                <option>40</option>
+                                                                <option>41</option>
+                                                                <option>42</option>
+                                                                <option>43</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <div class="h-100 border-0 ">
+
+
+
+                                                                    <label class="d-flex align-items-center"
+                                                                        for="gridCheck">
+                                                                        <input class="form-check-input me-3"
+                                                                            type="checkbox" id="gridCheck">
+                                                                        <p class="mt-3 fw-semibold"> Cash On Delivery
+
+                                                                        </p>
+
+
+                                                                    </label>
+
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="gridCheck">
+                                                                <label class="form-check-label fw-semibold"
+                                                                    for="gridCheck">
+                                                                    I have read and agreed to the<a
+                                                                        class="text-decoration-none fw-semibold"
+                                                                        href=""> terms
+                                                                        and conditions</a>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit"
+                                                                class="btn btn-primary">Confirm</button>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
 
                             </div>
                             <div class="col-lg-5">
@@ -151,14 +189,11 @@
                                         front of funky world.
                                     </p>
                                     <h1>$420</h1>
-                                </div>
-                                <div class="pt-2 card-footer d-flex border-0 pb-2 bg-light text-light text-start">
-
                                     <!-- Button trigger modal -->
-                                    <a class="text-decoration-none py-3 px-5 d-inline-block bg-light text-primary fw-bold rounded btn text-light px-4 py-2 border-0"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Buy now <i
-                                            class="fas fa-angle-double-right"></i>
-                                    </a>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal" style="margin-left: 20%;">
+                                        Buy now
+                                    </button>
 
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1"
@@ -166,75 +201,116 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                    <h5 class="modal-title" id="exampleModalLabel">Shipping Address
+                                                        Guest</h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
-                                                <form class="container row g-3 p-3">
-                                                    <div class="col-md-6">
-                                                        <label for="inputEmail4"
-                                                            class="form-label text-dark">Email</label>
-                                                        <input type="email" class="form-control" id="inputEmail4">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="inputPassword4"
-                                                            class="form-label text-dark">Password</label>
-                                                        <input type="password" class="form-control" id="inputPassword4">
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <label for="inputName" class="form-label text-dark">Full
-                                                            Name</label>
-                                                        <input type="text" class="form-control" id="inputAddress"
-                                                            placeholder="Enter Your Name">
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <label for="inputAddress"
-                                                            class="form-label text-dark">Address</label>
-                                                        <input type="text" class="form-control" id="inputAddress2"
-                                                            placeholder="Enter Your Address">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="inputCity" class="form-label text-dark">City</label>
-                                                        <input type="text" class="form-control" id="inputCity">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label for="inputState"
-                                                            class="form-label text-dark">Size</label>
-                                                        <select id="inputState" class="form-select">
-                                                            <option selected>Choose...</option>
-                                                            <option>38</option>
-                                                            <option>39</option>
-                                                            <option>40</option>
-                                                            <option>41</option>
-                                                            <option>42</option>
-                                                            <option>43</option>
-                                                            <option>44</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <label for="inputZip" class="form-label text-dark">Zip</label>
-                                                        <input type="text" class="form-control" id="inputZip">
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="gridCheck">
-                                                            <label class="form-check-label text-dark" for="gridCheck">
-                                                                I have read and agreed to the<a
-                                                                    class="text-decoration-none" href=""> terms and
-                                                                    conditions</a>
-                                                            </label>
+                                                <div class="modal-body">
+
+                                                    <form class="container row g-3 p-3">
+
+                                                        <div class="col-12">
+
+                                                            <input type="text" class="form-control" id="inputAddress"
+                                                                placeholder="Enter Your Name" required>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <button type="submit" class="btn btn-primary">Confirm
-                                                        </button>
-                                                    </div>
-                                                </form>
+                                                        <div class="col-md-6">
+
+                                                            <input type="text" class="form-control" id="inputNumber"
+                                                                placeholder="Enter Your Number" required>
+                                                        </div>
+                                                        <div class="col-12">
+
+                                                            <input type="text" class="form-control" id="inputAddress2"
+                                                                placeholder="Enter Your Address">
+                                                        </div>
+                                                        <div class="col-12">
+
+                                                            <select id="inputState" class="form-select" required>
+                                                                <option selected>Choose your city</option>
+                                                                <option>Dhaka</option>
+                                                                <option>Khulna</option>
+                                                                <option>Chittagong</option>
+                                                                <option>Rajshahi</option>
+                                                                <option>Rangpur</option>
+                                                                <option>Sylhet</option>
+                                                                <option>Barisal</option>
+
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <label for="chooseColour" class="form-label">Colour</label>
+                                                            <select id="inputState" class="form-select required">
+                                                                <option selected>Choose...</option>
+
+                                                                <option>Red</option>
+                                                                <option>Yellow</option>
+                                                                <option>White</option>
+                                                                <option>Black</option>
+                                                                <option>Purple</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <label for="inputSize" class="form-label">Size</label>
+                                                            <select id="inputState" class="form-select">
+                                                                <option selected>Choose...</option>
+
+                                                                <option>39</option>
+                                                                <option>40</option>
+                                                                <option>41</option>
+                                                                <option>42</option>
+                                                                <option>43</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <div class="h-100 border-0 ">
+
+
+
+                                                                    <label class="d-flex align-items-center"
+                                                                        for="gridCheck">
+                                                                        <input class="form-check-input me-3"
+                                                                            type="checkbox" id="gridCheck">
+                                                                        <p class="mt-3 fw-semibold"> Cash On Delivery
+
+                                                                        </p>
+
+
+                                                                    </label>
+
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="gridCheck">
+                                                                <label class="form-check-label fw-semibold"
+                                                                    for="gridCheck">
+                                                                    I have read and agreed to the<a
+                                                                        class="text-decoration-none fw-semibold"
+                                                                        href=""> terms
+                                                                        and conditions</a>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit"
+                                                                class="btn btn-primary">Confirm</button>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
                                 </div>
+
 
                             </div>
                             <div class="col-lg-5">
@@ -253,14 +329,11 @@
                                         front of funky world.
                                     </p>
                                     <h1>$420</h1>
-                                </div>
-                                <div class="pt-2 card-footer d-flex border-0 pb-2 bg-light text-light text-start">
-
                                     <!-- Button trigger modal -->
-                                    <a class="text-decoration-none py-3 px-5 d-inline-block bg-light text-primary fw-bold rounded btn text-light px-4 py-2 border-0"
-                                        data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Buy now <i
-                                            class="fas fa-angle-double-right"></i>
-                                    </a>
+                                    <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                        data-bs-target="#exampleModal" style="margin-left: 20%;">
+                                        Buy now
+                                    </button>
 
                                     <!-- Modal -->
                                     <div class="modal fade" id="exampleModal" tabindex="-1"
@@ -268,71 +341,111 @@
                                         <div class="modal-dialog">
                                             <div class="modal-content">
                                                 <div class="modal-header">
-                                                    <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                                    <h5 class="modal-title" id="exampleModalLabel">Shipping Address
+                                                        Guest</h5>
                                                     <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                         aria-label="Close"></button>
                                                 </div>
-                                                <form class="container row g-3 p-3">
-                                                    <div class="col-md-6">
-                                                        <label for="inputEmail4"
-                                                            class="form-label text-dark">Email</label>
-                                                        <input type="email" class="form-control" id="inputEmail4">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="inputPassword4"
-                                                            class="form-label text-dark">Password</label>
-                                                        <input type="password" class="form-control" id="inputPassword4">
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <label for="inputName" class="form-label text-dark">Full
-                                                            Name</label>
-                                                        <input type="text" class="form-control" id="inputAddress"
-                                                            placeholder="Enter Your Name">
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <label for="inputAddress"
-                                                            class="form-label text-dark">Address</label>
-                                                        <input type="text" class="form-control" id="inputAddress2"
-                                                            placeholder="Enter Your Address">
-                                                    </div>
-                                                    <div class="col-md-6">
-                                                        <label for="inputCity" class="form-label text-dark">City</label>
-                                                        <input type="text" class="form-control" id="inputCity">
-                                                    </div>
-                                                    <div class="col-md-4">
-                                                        <label for="inputState"
-                                                            class="form-label text-dark">Size</label>
-                                                        <select id="inputState" class="form-select">
-                                                            <option selected>Choose...</option>
-                                                            <option>38</option>
-                                                            <option>39</option>
-                                                            <option>40</option>
-                                                            <option>41</option>
-                                                            <option>42</option>
-                                                            <option>43</option>
-                                                            <option>44</option>
-                                                        </select>
-                                                    </div>
-                                                    <div class="col-md-2">
-                                                        <label for="inputZip" class="form-label text-dark">Zip</label>
-                                                        <input type="text" class="form-control" id="inputZip">
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <div class="form-check">
-                                                            <input class="form-check-input" type="checkbox"
-                                                                id="gridCheck">
-                                                            <label class="form-check-label text-dark" for="gridCheck">
-                                                                I have read and agreed to the<a
-                                                                    class="text-decoration-none" href=""> terms and
-                                                                    conditions</a>
-                                                            </label>
+                                                <div class="modal-body">
+
+                                                    <form class="container row g-3 p-3">
+
+                                                        <div class="col-12">
+
+                                                            <input type="text" class="form-control" id="inputAddress"
+                                                                placeholder="Enter Your Name" required>
                                                         </div>
-                                                    </div>
-                                                    <div class="col-12">
-                                                        <button type="submit" class="btn btn-primary">Confirm
-                                                        </button>
-                                                    </div>
-                                                </form>
+                                                        <div class="col-md-6">
+
+                                                            <input type="text" class="form-control" id="inputNumber"
+                                                                placeholder="Enter Your Number" required>
+                                                        </div>
+                                                        <div class="col-12">
+
+                                                            <input type="text" class="form-control" id="inputAddress2"
+                                                                placeholder="Enter Your Address">
+                                                        </div>
+                                                        <div class="col-12">
+
+                                                            <select id="inputState" class="form-select" required>
+                                                                <option selected>Choose your city</option>
+                                                                <option>Dhaka</option>
+                                                                <option>Khulna</option>
+                                                                <option>Chittagong</option>
+                                                                <option>Rajshahi</option>
+                                                                <option>Rangpur</option>
+                                                                <option>Sylhet</option>
+                                                                <option>Barisal</option>
+
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <label for="chooseColour" class="form-label">Colour</label>
+                                                            <select id="inputState" class="form-select required">
+                                                                <option selected>Choose...</option>
+
+                                                                <option>Red</option>
+                                                                <option>Yellow</option>
+                                                                <option>White</option>
+                                                                <option>Black</option>
+                                                                <option>Purple</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-lg-4">
+                                                            <label for="inputSize" class="form-label">Size</label>
+                                                            <select id="inputState" class="form-select">
+                                                                <option selected>Choose...</option>
+
+                                                                <option>39</option>
+                                                                <option>40</option>
+                                                                <option>41</option>
+                                                                <option>42</option>
+                                                                <option>43</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div>
+                                                                <div class="h-100 border-0 ">
+
+
+
+                                                                    <label class="d-flex align-items-center"
+                                                                        for="gridCheck">
+                                                                        <input class="form-check-input me-3"
+                                                                            type="checkbox" id="gridCheck">
+                                                                        <p class="mt-3 fw-semibold"> Cash On Delivery
+
+                                                                        </p>
+
+
+                                                                    </label>
+
+
+                                                                </div>
+
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <div class="form-check">
+                                                                <input class="form-check-input" type="checkbox"
+                                                                    id="gridCheck">
+                                                                <label class="form-check-label fw-semibold"
+                                                                    for="gridCheck">
+                                                                    I have read and agreed to the<a
+                                                                        class="text-decoration-none fw-semibold"
+                                                                        href=""> terms
+                                                                        and conditions</a>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                        <div class="col-12">
+                                                            <button type="submit"
+                                                                class="btn btn-primary">Confirm</button>
+                                                        </div>
+                                                    </form>
+
+                                                </div>
+
                                             </div>
                                         </div>
                                     </div>
@@ -410,14 +523,11 @@
                             <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                                 sint. </p>
                             <h2>$1289</h2>
-                        </div>
-                        <div class="pt-4 card-footer d-flex justify-content-center border-0 pb-3 bg-light text-light">
-
                             <!-- Button trigger modal -->
-                            <a class="text-decoration-none py-3 px-5 d-inline-block bg-light text-primary fw-bold rounded btn text-light px-4 py-2 border-0"
-                                data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Buy now <i
-                                    class="fas fa-angle-double-right"></i>
-                            </a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy now
+                            </button>
 
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -425,68 +535,110 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">Shipping Address Guest</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <form class="container row g-3 p-3">
-                                            <div class="col-md-6">
-                                                <label for="inputEmail4" class="form-label text-dark">Email</label>
-                                                <input type="email" class="form-control" id="inputEmail4">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputPassword4"
-                                                    class="form-label text-dark">Password</label>
-                                                <input type="password" class="form-control" id="inputPassword4">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputName" class="form-label text-dark">Full Name</label>
-                                                <input type="text" class="form-control" id="inputAddress"
-                                                    placeholder="Enter Your Name">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputAddress" class="form-label text-dark">Address</label>
-                                                <input type="text" class="form-control" id="inputAddress2"
-                                                    placeholder="Enter Your Address">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputCity" class="form-label text-dark">City</label>
-                                                <input type="text" class="form-control" id="inputCity">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label for="inputState" class="form-label text-dark">Size</label>
-                                                <select id="inputState" class="form-select">
-                                                    <option selected>Choose...</option>
-                                                    <option>38</option>
-                                                    <option>39</option>
-                                                    <option>40</option>
-                                                    <option>41</option>
-                                                    <option>42</option>
-                                                    <option>43</option>
-                                                    <option>44</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <label for="inputZip" class="form-label text-dark">Zip</label>
-                                                <input type="text" class="form-control" id="inputZip">
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                    <label class="form-check-label text-dark" for="gridCheck">
-                                                        I have read and agreed to the<a class="text-decoration-none"
-                                                            href=""> terms and conditions</a>
-                                                    </label>
+                                        <div class="modal-body">
+
+                                            <form class="container row g-3 p-3">
+
+                                                <div class="col-12">
+
+                                                    <input type="text" class="form-control" id="inputAddress"
+                                                        placeholder="Enter Your Name" required>
                                                 </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <button type="submit" class="btn btn-primary">Confirm</button>
-                                            </div>
-                                        </form>
+                                                <div class="col-md-6">
+
+                                                    <input type="text" class="form-control" id="inputNumber"
+                                                        placeholder="Enter Your Number" required>
+                                                </div>
+                                                <div class="col-12">
+
+                                                    <input type="text" class="form-control" id="inputAddress2"
+                                                        placeholder="Enter Your Address">
+                                                </div>
+                                                <div class="col-12">
+
+                                                    <select id="inputState" class="form-select" required>
+                                                        <option selected>Choose your city</option>
+                                                        <option>Dhaka</option>
+                                                        <option>Khulna</option>
+                                                        <option>Chittagong</option>
+                                                        <option>Rajshahi</option>
+                                                        <option>Rangpur</option>
+                                                        <option>Sylhet</option>
+                                                        <option>Barisal</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="chooseColour" class="form-label">Colour</label>
+                                                    <select id="inputState" class="form-select required">
+                                                        <option selected>Choose...</option>
+
+                                                        <option>Red</option>
+                                                        <option>Yellow</option>
+                                                        <option>White</option>
+                                                        <option>Black</option>
+                                                        <option>Purple</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="inputSize" class="form-label">Size</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Choose...</option>
+
+                                                        <option>39</option>
+                                                        <option>40</option>
+                                                        <option>41</option>
+                                                        <option>42</option>
+                                                        <option>43</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div>
+                                                        <div class="h-100 border-0 ">
+
+
+
+                                                            <label class="d-flex align-items-center" for="gridCheck">
+                                                                <input class="form-check-input me-3" type="checkbox"
+                                                                    id="gridCheck">
+                                                                <p class="mt-3 fw-semibold"> Cash On Delivery
+
+                                                                </p>
+
+
+                                                            </label>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                        <label class="form-check-label fw-semibold" for="gridCheck">
+                                                            I have read and agreed to the<a
+                                                                class="text-decoration-none fw-semibold" href=""> terms
+                                                                and conditions</a>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-primary">Confirm</button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -498,14 +650,11 @@
                             <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                                 sint. </p>
                             <h2>$799</h2>
-                        </div>
-                        <div class="pt-4 card-footer d-flex justify-content-center border-0 pb-3 bg-light text-light">
-
                             <!-- Button trigger modal -->
-                            <a class="text-decoration-none py-3 px-5 d-inline-block bg-light text-primary fw-bold rounded btn text-light px-4 py-2 border-0"
-                                data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Buy now <i
-                                    class="fas fa-angle-double-right"></i>
-                            </a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy now
+                            </button>
 
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -513,68 +662,110 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">Shipping Address Guest</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <form class="container row g-3 p-3">
-                                            <div class="col-md-6">
-                                                <label for="inputEmail4" class="form-label text-dark">Email</label>
-                                                <input type="email" class="form-control" id="inputEmail4">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputPassword4"
-                                                    class="form-label text-dark">Password</label>
-                                                <input type="password" class="form-control" id="inputPassword4">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputName" class="form-label text-dark">Full Name</label>
-                                                <input type="text" class="form-control" id="inputAddress"
-                                                    placeholder="Enter Your Name">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputAddress" class="form-label text-dark">Address</label>
-                                                <input type="text" class="form-control" id="inputAddress2"
-                                                    placeholder="Enter Your Address">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputCity" class="form-label text-dark">City</label>
-                                                <input type="text" class="form-control" id="inputCity">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label for="inputState" class="form-label text-dark">Size</label>
-                                                <select id="inputState" class="form-select">
-                                                    <option selected>Choose...</option>
-                                                    <option>38</option>
-                                                    <option>39</option>
-                                                    <option>40</option>
-                                                    <option>41</option>
-                                                    <option>42</option>
-                                                    <option>43</option>
-                                                    <option>44</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <label for="inputZip" class="form-label text-dark">Zip</label>
-                                                <input type="text" class="form-control" id="inputZip">
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                    <label class="form-check-label text-dark" for="gridCheck">
-                                                        I have read and agreed to the<a class="text-decoration-none"
-                                                            href=""> terms and conditions</a>
-                                                    </label>
+                                        <div class="modal-body">
+
+                                            <form class="container row g-3 p-3">
+
+                                                <div class="col-12">
+
+                                                    <input type="text" class="form-control" id="inputAddress"
+                                                        placeholder="Enter Your Name" required>
                                                 </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <button type="submit" class="btn btn-primary">Confirm</button>
-                                            </div>
-                                        </form>
+                                                <div class="col-md-6">
+
+                                                    <input type="text" class="form-control" id="inputNumber"
+                                                        placeholder="Enter Your Number" required>
+                                                </div>
+                                                <div class="col-12">
+
+                                                    <input type="text" class="form-control" id="inputAddress2"
+                                                        placeholder="Enter Your Address">
+                                                </div>
+                                                <div class="col-12">
+
+                                                    <select id="inputState" class="form-select" required>
+                                                        <option selected>Choose your city</option>
+                                                        <option>Dhaka</option>
+                                                        <option>Khulna</option>
+                                                        <option>Chittagong</option>
+                                                        <option>Rajshahi</option>
+                                                        <option>Rangpur</option>
+                                                        <option>Sylhet</option>
+                                                        <option>Barisal</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="chooseColour" class="form-label">Colour</label>
+                                                    <select id="inputState" class="form-select required">
+                                                        <option selected>Choose...</option>
+
+                                                        <option>Red</option>
+                                                        <option>Yellow</option>
+                                                        <option>White</option>
+                                                        <option>Black</option>
+                                                        <option>Purple</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="inputSize" class="form-label">Size</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Choose...</option>
+
+                                                        <option>39</option>
+                                                        <option>40</option>
+                                                        <option>41</option>
+                                                        <option>42</option>
+                                                        <option>43</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div>
+                                                        <div class="h-100 border-0 ">
+
+
+
+                                                            <label class="d-flex align-items-center" for="gridCheck">
+                                                                <input class="form-check-input me-3" type="checkbox"
+                                                                    id="gridCheck">
+                                                                <p class="mt-3 fw-semibold"> Cash On Delivery
+
+                                                                </p>
+
+
+                                                            </label>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                        <label class="form-check-label fw-semibold" for="gridCheck">
+                                                            I have read and agreed to the<a
+                                                                class="text-decoration-none fw-semibold" href=""> terms
+                                                                and conditions</a>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-primary">Confirm</button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
 
@@ -586,14 +777,11 @@
                             <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                                 sint. </p>
                             <h2>$699</h2>
-                        </div>
-                        <div class="pt-4 card-footer d-flex justify-content-center border-0 pb-3 bg-light text-light">
-
                             <!-- Button trigger modal -->
-                            <a class="text-decoration-none py-3 px-5 d-inline-block bg-light text-primary fw-bold rounded btn text-light px-4 py-2 border-0"
-                                data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Buy now <i
-                                    class="fas fa-angle-double-right"></i>
-                            </a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy now
+                            </button>
 
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -601,68 +789,110 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">Shipping Address Guest</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <form class="container row g-3 p-3">
-                                            <div class="col-md-6">
-                                                <label for="inputEmail4" class="form-label text-dark">Email</label>
-                                                <input type="email" class="form-control" id="inputEmail4">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputPassword4"
-                                                    class="form-label text-dark">Password</label>
-                                                <input type="password" class="form-control" id="inputPassword4">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputName" class="form-label text-dark">Full Name</label>
-                                                <input type="text" class="form-control" id="inputAddress"
-                                                    placeholder="Enter Your Name">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputAddress" class="form-label text-dark">Address</label>
-                                                <input type="text" class="form-control" id="inputAddress2"
-                                                    placeholder="Enter Your Address">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputCity" class="form-label text-dark">City</label>
-                                                <input type="text" class="form-control" id="inputCity">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label for="inputState" class="form-label text-dark">Size</label>
-                                                <select id="inputState" class="form-select">
-                                                    <option selected>Choose...</option>
-                                                    <option>38</option>
-                                                    <option>39</option>
-                                                    <option>40</option>
-                                                    <option>41</option>
-                                                    <option>42</option>
-                                                    <option>43</option>
-                                                    <option>44</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <label for="inputZip" class="form-label text-dark">Zip</label>
-                                                <input type="text" class="form-control" id="inputZip">
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                    <label class="form-check-label text-dark" for="gridCheck">
-                                                        I have read and agreed to the<a class="text-decoration-none"
-                                                            href=""> terms and conditions</a>
-                                                    </label>
+                                        <div class="modal-body">
+
+                                            <form class="container row g-3 p-3">
+
+                                                <div class="col-12">
+
+                                                    <input type="text" class="form-control" id="inputAddress"
+                                                        placeholder="Enter Your Name" required>
                                                 </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <button type="submit" class="btn btn-primary">Confirm</button>
-                                            </div>
-                                        </form>
+                                                <div class="col-md-6">
+
+                                                    <input type="text" class="form-control" id="inputNumber"
+                                                        placeholder="Enter Your Number" required>
+                                                </div>
+                                                <div class="col-12">
+
+                                                    <input type="text" class="form-control" id="inputAddress2"
+                                                        placeholder="Enter Your Address">
+                                                </div>
+                                                <div class="col-12">
+
+                                                    <select id="inputState" class="form-select" required>
+                                                        <option selected>Choose your city</option>
+                                                        <option>Dhaka</option>
+                                                        <option>Khulna</option>
+                                                        <option>Chittagong</option>
+                                                        <option>Rajshahi</option>
+                                                        <option>Rangpur</option>
+                                                        <option>Sylhet</option>
+                                                        <option>Barisal</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="chooseColour" class="form-label">Colour</label>
+                                                    <select id="inputState" class="form-select required">
+                                                        <option selected>Choose...</option>
+
+                                                        <option>Red</option>
+                                                        <option>Yellow</option>
+                                                        <option>White</option>
+                                                        <option>Black</option>
+                                                        <option>Purple</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="inputSize" class="form-label">Size</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Choose...</option>
+
+                                                        <option>39</option>
+                                                        <option>40</option>
+                                                        <option>41</option>
+                                                        <option>42</option>
+                                                        <option>43</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div>
+                                                        <div class="h-100 border-0 ">
+
+
+
+                                                            <label class="d-flex align-items-center" for="gridCheck">
+                                                                <input class="form-check-input me-3" type="checkbox"
+                                                                    id="gridCheck">
+                                                                <p class="mt-3 fw-semibold"> Cash On Delivery
+
+                                                                </p>
+
+
+                                                            </label>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                        <label class="form-check-label fw-semibold" for="gridCheck">
+                                                            I have read and agreed to the<a
+                                                                class="text-decoration-none fw-semibold" href=""> terms
+                                                                and conditions</a>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-primary">Confirm</button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -683,14 +913,11 @@
                             <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                                 sint. </p>
                             <h2>$1289</h2>
-                        </div>
-                        <div class="pt-4 card-footer d-flex justify-content-center border-0 pb-3 bg-light text-light">
-
                             <!-- Button trigger modal -->
-                            <a class="text-decoration-none py-3 px-5 d-inline-block bg-light text-primary fw-bold rounded btn text-light px-4 py-2 border-0"
-                                data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Buy now <i
-                                    class="fas fa-angle-double-right"></i>
-                            </a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy now
+                            </button>
 
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -698,68 +925,111 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">Shipping Address Guest</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <form class="container row g-3 p-3">
-                                            <div class="col-md-6">
-                                                <label for="inputEmail4" class="form-label text-dark">Email</label>
-                                                <input type="email" class="form-control" id="inputEmail4">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputPassword4"
-                                                    class="form-label text-dark">Password</label>
-                                                <input type="password" class="form-control" id="inputPassword4">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputName" class="form-label text-dark">Full Name</label>
-                                                <input type="text" class="form-control" id="inputAddress"
-                                                    placeholder="Enter Your Name">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputAddress" class="form-label text-dark">Address</label>
-                                                <input type="text" class="form-control" id="inputAddress2"
-                                                    placeholder="Enter Your Address">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputCity" class="form-label text-dark">City</label>
-                                                <input type="text" class="form-control" id="inputCity">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label for="inputState" class="form-label text-dark">Size</label>
-                                                <select id="inputState" class="form-select">
-                                                    <option selected>Choose...</option>
-                                                    <option>38</option>
-                                                    <option>39</option>
-                                                    <option>40</option>
-                                                    <option>41</option>
-                                                    <option>42</option>
-                                                    <option>43</option>
-                                                    <option>44</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <label for="inputZip" class="form-label text-dark">Zip</label>
-                                                <input type="text" class="form-control" id="inputZip">
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                    <label class="form-check-label text-dark" for="gridCheck">
-                                                        I have read and agreed to the<a class="text-decoration-none"
-                                                            href=""> terms and conditions</a>
-                                                    </label>
+                                        <div class="modal-body">
+
+                                            <form class="container row g-3 p-3">
+
+                                                <div class="col-12">
+
+                                                    <input type="text" class="form-control" id="inputAddress"
+                                                        placeholder="Enter Your Name" required>
                                                 </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <button type="submit" class="btn btn-primary">Confirm</button>
-                                            </div>
-                                        </form>
+                                                <div class="col-md-6">
+
+                                                    <input type="text" class="form-control" id="inputNumber"
+                                                        placeholder="Enter Your Number" required>
+                                                </div>
+                                                <div class="col-12">
+
+                                                    <input type="text" class="form-control" id="inputAddress2"
+                                                        placeholder="Enter Your Address">
+                                                </div>
+                                                <div class="col-12">
+
+                                                    <select id="inputState" class="form-select" required>
+                                                        <option selected>Choose your city</option>
+                                                        <option>Dhaka</option>
+                                                        <option>Khulna</option>
+                                                        <option>Chittagong</option>
+                                                        <option>Rajshahi</option>
+                                                        <option>Rangpur</option>
+                                                        <option>Sylhet</option>
+                                                        <option>Barisal</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="chooseColour" class="form-label">Colour</label>
+                                                    <select id="inputState" class="form-select required">
+                                                        <option selected>Choose...</option>
+
+                                                        <option>Red</option>
+                                                        <option>Yellow</option>
+                                                        <option>White</option>
+                                                        <option>Black</option>
+                                                        <option>Purple</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="inputSize" class="form-label">Size</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Choose...</option>
+
+                                                        <option>39</option>
+                                                        <option>40</option>
+                                                        <option>41</option>
+                                                        <option>42</option>
+                                                        <option>43</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div>
+                                                        <div class="h-100 border-0 ">
+
+
+
+                                                            <label class="d-flex align-items-center" for="gridCheck">
+                                                                <input class="form-check-input me-3" type="checkbox"
+                                                                    id="gridCheck">
+                                                                <p class="mt-3 fw-semibold"> Cash On Delivery
+
+                                                                </p>
+
+
+                                                            </label>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                        <label class="form-check-label fw-semibold" for="gridCheck">
+                                                            I have read and agreed to the<a
+                                                                class="text-decoration-none fw-semibold" href=""> terms
+                                                                and conditions</a>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-primary">Confirm</button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
+
                         </div>
+
                     </div>
                 </div>
 
@@ -771,14 +1041,11 @@
                             <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                                 sint. </p>
                             <h2>$799</h2>
-                        </div>
-                        <div class="pt-4 card-footer d-flex justify-content-center border-0 pb-3 bg-light text-light">
-
                             <!-- Button trigger modal -->
-                            <a class="text-decoration-none py-3 px-5 d-inline-block bg-light text-primary fw-bold rounded btn text-light px-4 py-2 border-0"
-                                data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Buy now <i
-                                    class="fas fa-angle-double-right"></i>
-                            </a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy now
+                            </button>
 
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -786,68 +1053,111 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">Shipping Address Guest</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <form class="container row g-3 p-3">
-                                            <div class="col-md-6">
-                                                <label for="inputEmail4" class="form-label text-dark">Email</label>
-                                                <input type="email" class="form-control" id="inputEmail4">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputPassword4"
-                                                    class="form-label text-dark">Password</label>
-                                                <input type="password" class="form-control" id="inputPassword4">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputName" class="form-label text-dark">Full Name</label>
-                                                <input type="text" class="form-control" id="inputAddress"
-                                                    placeholder="Enter Your Name">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputAddress" class="form-label text-dark">Address</label>
-                                                <input type="text" class="form-control" id="inputAddress2"
-                                                    placeholder="Enter Your Address">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputCity" class="form-label text-dark">City</label>
-                                                <input type="text" class="form-control" id="inputCity">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label for="inputState" class="form-label text-dark">Size</label>
-                                                <select id="inputState" class="form-select">
-                                                    <option selected>Choose...</option>
-                                                    <option>38</option>
-                                                    <option>39</option>
-                                                    <option>40</option>
-                                                    <option>41</option>
-                                                    <option>42</option>
-                                                    <option>43</option>
-                                                    <option>44</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <label for="inputZip" class="form-label text-dark">Zip</label>
-                                                <input type="text" class="form-control" id="inputZip">
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                    <label class="form-check-label text-dark" for="gridCheck">
-                                                        I have read and agreed to the<a class="text-decoration-none"
-                                                            href=""> terms and conditions</a>
-                                                    </label>
+                                        <div class="modal-body">
+
+                                            <form class="container row g-3 p-3">
+
+                                                <div class="col-12">
+
+                                                    <input type="text" class="form-control" id="inputAddress"
+                                                        placeholder="Enter Your Name" required>
                                                 </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <button type="submit" class="btn btn-primary">Confirm</button>
-                                            </div>
-                                        </form>
+                                                <div class="col-md-6">
+
+                                                    <input type="text" class="form-control" id="inputNumber"
+                                                        placeholder="Enter Your Number" required>
+                                                </div>
+                                                <div class="col-12">
+
+                                                    <input type="text" class="form-control" id="inputAddress2"
+                                                        placeholder="Enter Your Address">
+                                                </div>
+                                                <div class="col-12">
+
+                                                    <select id="inputState" class="form-select" required>
+                                                        <option selected>Choose your city</option>
+                                                        <option>Dhaka</option>
+                                                        <option>Khulna</option>
+                                                        <option>Chittagong</option>
+                                                        <option>Rajshahi</option>
+                                                        <option>Rangpur</option>
+                                                        <option>Sylhet</option>
+                                                        <option>Barisal</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="chooseColour" class="form-label">Colour</label>
+                                                    <select id="inputState" class="form-select required">
+                                                        <option selected>Choose...</option>
+
+                                                        <option>Red</option>
+                                                        <option>Yellow</option>
+                                                        <option>White</option>
+                                                        <option>Black</option>
+                                                        <option>Purple</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="inputSize" class="form-label">Size</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Choose...</option>
+
+                                                        <option>39</option>
+                                                        <option>40</option>
+                                                        <option>41</option>
+                                                        <option>42</option>
+                                                        <option>43</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div>
+                                                        <div class="h-100 border-0 ">
+
+
+
+                                                            <label class="d-flex align-items-center" for="gridCheck">
+                                                                <input class="form-check-input me-3" type="checkbox"
+                                                                    id="gridCheck">
+                                                                <p class="mt-3 fw-semibold"> Cash On Delivery
+
+                                                                </p>
+
+
+                                                            </label>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                        <label class="form-check-label fw-semibold" for="gridCheck">
+                                                            I have read and agreed to the<a
+                                                                class="text-decoration-none fw-semibold" href=""> terms
+                                                                and conditions</a>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-primary">Confirm</button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
+
                         </div>
+
                     </div>
                 </div>
 
@@ -859,14 +1169,11 @@
                             <p class="card-text">Amet minim mollit non deserunt ullamco est sit aliqua dolor do amet
                                 sint. </p>
                             <h2>$699</h2>
-                        </div>
-                        <div class="pt-4 card-footer d-flex justify-content-center border-0 pb-3 bg-light text-light">
-
                             <!-- Button trigger modal -->
-                            <a class="text-decoration-none py-3 px-5 d-inline-block bg-light text-primary fw-bold rounded btn text-light px-4 py-2 border-0"
-                                data-bs-toggle="modal" data-bs-target="#exampleModal" href="#">Buy now <i
-                                    class="fas fa-angle-double-right"></i>
-                            </a>
+                            <button type="button" class="btn btn-primary" data-bs-toggle="modal"
+                                data-bs-target="#exampleModal">
+                                Buy now
+                            </button>
 
                             <!-- Modal -->
                             <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel"
@@ -874,68 +1181,110 @@
                                 <div class="modal-dialog">
                                     <div class="modal-content">
                                         <div class="modal-header">
-                                            <h5 class="modal-title" id="exampleModalLabel"></h5>
+                                            <h5 class="modal-title" id="exampleModalLabel">Shipping Address Guest</h5>
                                             <button type="button" class="btn-close" data-bs-dismiss="modal"
                                                 aria-label="Close"></button>
                                         </div>
-                                        <form class="container row g-3 p-3">
-                                            <div class="col-md-6">
-                                                <label for="inputEmail4" class="form-label text-dark">Email</label>
-                                                <input type="email" class="form-control" id="inputEmail4">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputPassword4"
-                                                    class="form-label text-dark">Password</label>
-                                                <input type="password" class="form-control" id="inputPassword4">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputName" class="form-label text-dark">Full Name</label>
-                                                <input type="text" class="form-control" id="inputAddress"
-                                                    placeholder="Enter Your Name">
-                                            </div>
-                                            <div class="col-12">
-                                                <label for="inputAddress" class="form-label text-dark">Address</label>
-                                                <input type="text" class="form-control" id="inputAddress2"
-                                                    placeholder="Enter Your Address">
-                                            </div>
-                                            <div class="col-md-6">
-                                                <label for="inputCity" class="form-label text-dark">City</label>
-                                                <input type="text" class="form-control" id="inputCity">
-                                            </div>
-                                            <div class="col-md-4">
-                                                <label for="inputState" class="form-label text-dark">Size</label>
-                                                <select id="inputState" class="form-select">
-                                                    <option selected>Choose...</option>
-                                                    <option>38</option>
-                                                    <option>39</option>
-                                                    <option>40</option>
-                                                    <option>41</option>
-                                                    <option>42</option>
-                                                    <option>43</option>
-                                                    <option>44</option>
-                                                </select>
-                                            </div>
-                                            <div class="col-md-2">
-                                                <label for="inputZip" class="form-label text-dark">Zip</label>
-                                                <input type="text" class="form-control" id="inputZip">
-                                            </div>
-                                            <div class="col-12">
-                                                <div class="form-check">
-                                                    <input class="form-check-input" type="checkbox" id="gridCheck">
-                                                    <label class="form-check-label text-dark" for="gridCheck">
-                                                        I have read and agreed to the<a class="text-decoration-none"
-                                                            href=""> terms and conditions</a>
-                                                    </label>
+                                        <div class="modal-body">
+
+                                            <form class="container row g-3 p-3">
+
+                                                <div class="col-12">
+
+                                                    <input type="text" class="form-control" id="inputAddress"
+                                                        placeholder="Enter Your Name" required>
                                                 </div>
-                                            </div>
-                                            <div class="col-12">
-                                                <button type="submit" class="btn btn-primary">Confirm</button>
-                                            </div>
-                                        </form>
+                                                <div class="col-md-6">
+
+                                                    <input type="text" class="form-control" id="inputNumber"
+                                                        placeholder="Enter Your Number" required>
+                                                </div>
+                                                <div class="col-12">
+
+                                                    <input type="text" class="form-control" id="inputAddress2"
+                                                        placeholder="Enter Your Address">
+                                                </div>
+                                                <div class="col-12">
+
+                                                    <select id="inputState" class="form-select" required>
+                                                        <option selected>Choose your city</option>
+                                                        <option>Dhaka</option>
+                                                        <option>Khulna</option>
+                                                        <option>Chittagong</option>
+                                                        <option>Rajshahi</option>
+                                                        <option>Rangpur</option>
+                                                        <option>Sylhet</option>
+                                                        <option>Barisal</option>
+
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="chooseColour" class="form-label">Colour</label>
+                                                    <select id="inputState" class="form-select required">
+                                                        <option selected>Choose...</option>
+
+                                                        <option>Red</option>
+                                                        <option>Yellow</option>
+                                                        <option>White</option>
+                                                        <option>Black</option>
+                                                        <option>Purple</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-lg-4">
+                                                    <label for="inputSize" class="form-label">Size</label>
+                                                    <select id="inputState" class="form-select">
+                                                        <option selected>Choose...</option>
+
+                                                        <option>39</option>
+                                                        <option>40</option>
+                                                        <option>41</option>
+                                                        <option>42</option>
+                                                        <option>43</option>
+                                                    </select>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div>
+                                                        <div class="h-100 border-0 ">
+
+
+
+                                                            <label class="d-flex align-items-center" for="gridCheck">
+                                                                <input class="form-check-input me-3" type="checkbox"
+                                                                    id="gridCheck">
+                                                                <p class="mt-3 fw-semibold"> Cash On Delivery
+
+                                                                </p>
+
+
+                                                            </label>
+
+
+                                                        </div>
+
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <div class="form-check">
+                                                        <input class="form-check-input" type="checkbox" id="gridCheck">
+                                                        <label class="form-check-label fw-semibold" for="gridCheck">
+                                                            I have read and agreed to the<a
+                                                                class="text-decoration-none fw-semibold" href=""> terms
+                                                                and conditions</a>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <div class="col-12">
+                                                    <button type="submit" class="btn btn-primary">Confirm</button>
+                                                </div>
+                                            </form>
+
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
                         </div>
+
                     </div>
                 </div>
             </div>
@@ -951,8 +1300,8 @@
                     <div class="input-gro mb-3">
                         <input type="email" class="form-control" placeholder="Recipient's email"
                             aria-label="Recipient's email" aria-describedby="button-addon2">
-                        <button class="btn btn-outline-secondary text-light" type="button"
-                            id="button-addon2">Button</button>
+                        <button class="btn btn-outline-secondary text-light mt-3" type="button"
+                            id="button-addon2">Confirm</button>
                     </div>
                 </div>
             </div>
